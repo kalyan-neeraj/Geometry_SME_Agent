@@ -7,7 +7,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104%2B-009688.svg)](https://fastapi.tiangolo.com)
 [![Elasticsearch](https://img.shields.io/badge/Elasticsearch-8.x-005571.svg)](https://www.elastic.co)
 
-## 🎯 Project Overview
+##  Project Overview
 
 The Geometry Subject Matter Expert (SME) AI Agent is an advanced intelligent tutoring system that combines Retrieval-Augmented Generation (RAG) with agentic workflows to provide personalized geometry education for grades 6-10. The system integrates state-of-the-art NLP techniques with practical educational tools to deliver accurate, pedagogically-sound geometry instruction.
 
@@ -26,29 +26,29 @@ The Geometry Subject Matter Expert (SME) AI Agent is an advanced intelligent tut
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        User Interface                        │
-│                    (Web API / REST Client)                   │
+│                        User Interface                       │
+│                    (Web API / REST Client)                  │
 └────────────────────────┬────────────────────────────────────┘
                          │
          ┌───────────────┴───────────────┐
-         │       FastAPI Server           │
-         │    (Authentication Layer)      │
+         │       FastAPI Server          │
+         │    (Authentication Layer)     │
          └───────────────┬───────────────┘
                          │
-         ┌───────────────┴────────────────┐
+         ┌───────────────┴─────────────────┐
          │    Conversation Agent           │
          │   (Intent & Task Routing)       │
          └────┬──────────────────┬─────────┘
               │                  │
-    ┌─────────┴─────────┐   ┌────┴──────────┐
-    │   RAG Pipeline     │   │     Tools      │
-    │                    │   │  Orchestrator  │
-    └──┬──────────┬─────┘   └───┬────────┬──┘
-       │          │              │        │
-  ┌────┴──┐  ┌───┴────┐  ┌──────┴──┐ ┌──┴─────┐
-  │Vector │  │ Gemini │  │Document │ │ Email  │
-  │  DB   │  │  LLM   │  │Generator│ │Sender  │
-  └───────┘  └────────┘  └─────────┘ └────────┘
+    ┌─────────┴───────────┐ ┌────┴────────────┐
+    │   RAG Pipeline      │ │     Tools       │
+    │                     │ │  Orchestrator   │
+    └──┬──────────┬───────┘ └───┬────────┬────┘
+       │          │             │        │
+  ┌────┴──┐  ┌───┴────┐  ┌──────┴──┐ ┌───┴─────┐
+  │Vector │  │ Gemini │  │Document │ │   Email │
+  │  DB   │  │  LLM   │  │Generator│ │  Sender │
+  └───────┘  └────────┘  └─────────┘ └─────────┘
 ```
 
 ## 🚀 Quick Start
